@@ -18,7 +18,7 @@
   <em>скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud</em>
 </p>
 <p align="center">
-  <img src="screenshots/S1-3 -2.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
+  <img src="screenshots/S1-3-2.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
   <br>
   <em>скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud</em>
 </p>
@@ -58,9 +58,9 @@
   <em>output в виде списка словарей</em>
 </p> 
 
-### Задание 5
+### Задание 4
 <p align="center">
-  <img src="screenshots/S5.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S4.png" alt="output в виде списка словарей" width="800"/>
   <br>
   <em>output в виде списка словарей</em>
 </p> 
