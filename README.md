@@ -72,3 +72,9 @@
   <em>output в виде списка словарей</em>
 </p> 
 
+<p align="center">
+  <img src="screenshots/S7-5.png" alt="output в виде списка словарей" width="800"/>
+  <br>
+  <em>output в виде списка словарей</em>
+</p> 
+
