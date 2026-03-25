@@ -38,24 +38,24 @@
 
 ### Задание 3
 <p align="center">
-  <img src="screenshots/S3-1.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S3-1.png" alt="список ресурсов в стейте,  удаление из стейта модулей  vpc и vm" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>список ресурсов в стейте,  удаление из стейта модулей  vpc и vm</em>
 </p> 
 <p align="center">
-  <img src="screenshots/S3-2.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S3-2.png" alt="импортирт модуля  vpc" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>импортирт модуля  vpc</em>
 </p> 
 <p align="center">
-  <img src="screenshots/S3-3.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S3-3.png" alt="импортирт модуля vm" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>импортирт модуля vm</em>
 </p> 
 <p align="center">
-  <img src="screenshots/S3-4.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S3-4.png" alt="terraform plan" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>terraform plan</em>
 </p> 
 
 ### Задание 4
