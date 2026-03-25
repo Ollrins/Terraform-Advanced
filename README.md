@@ -36,6 +36,8 @@
   <em>документация к модулю с помощью terraform-docs</em>
 </p>
 
+Код для заданий 1 и 2 https://github.com/Ollrins/Terraform-Advanced/tree/main/src1-2
+
 ### Задание 3
 <p align="center">
   <img src="screenshots/S3-1.png" alt="список ресурсов в стейте,  удаление из стейта модулей  vpc и vm" width="800"/>
@@ -113,6 +115,8 @@ terraform import 'module.example-vm.yandex_compute_instance.vm[0]' <vm_id_web_st
   <em>модуль vpc для создания подсетей в трех зонах доступности, результат из консоли YC</em>
 </p> 
 
+Код для задания 4 https://github.com/Ollrins/Terraform-Advanced/tree/main/src4
+
 ### Задание 7
 <p align="center">
   <img src="screenshots/S7.png" alt=" секрет с помощью terraform vault, вывод в output" width="800"/>
@@ -126,3 +130,4 @@ terraform import 'module.example-vm.yandex_compute_instance.vm[0]' <vm_id_web_st
   <em>новый секрет в vault с помощью terraform</em>
 </p> 
 
+Код для задания 7 https://github.com/Ollrins/Terraform-Advanced/tree/main/src7
