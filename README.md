@@ -82,7 +82,7 @@ terraform state rm module.vpc_dev_b
 terraform state rm module.test-vm
 terraform state rm module.example-vm
 ```
-# Проверяем
+ Проверяем
 ```bash
 terraform state list
 ```
