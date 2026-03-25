@@ -58,6 +58,54 @@
   <em>terraform plan</em>
 </p> 
 
+1. Просмотр текущего state
+```bash
+terraform state list
+text
+module.vpc_dev.yandex_vpc_network.dev-oll
+module.vpc_dev.yandex_vpc_subnet.dev-oll
+module.vpc_dev_b.yandex_vpc_network.dev-oll
+module.vpc_dev_b.yandex_vpc_subnet.dev-oll
+module.test-vm.yandex_compute_instance.vm[0]
+module.test-vm.yandex_compute_instance.vm[1]
+module.example-vm.yandex_compute_instance.vm[0]
+```
+2. Удаление модуля vpc из state
+```bash
+terraform state rm module.vpc_dev
+terraform state rm module.vpc_dev_b
+```
+3. Удаление модуля vm из state
+```bash
+terraform state rm module.test-vm
+terraform state rm module.example-vm
+```
+# Проверяем
+```bash
+terraform state list
+```
+4. Импорт ресурсов обратно
+ 4.1 Найдем ID ресурсов:
+```bash
+yc vpc network list
+yc vpc subnet list
+yc compute instance list
+```
+ 4.2 Импортируем сети и подсети:
+```bash
+terraform import module.vpc_dev.yandex_vpc_network.dev-oll <network_id_develop_a>
+terraform import module.vpc_dev_b.yandex_vpc_network.dev-oll <network_id_develop_b>
+terraform import module.vpc_dev.yandex_vpc_subnet.dev-oll <subnet_id_develop_a>
+terraform import module.vpc_dev_b.yandex_vpc_subnet.dev-oll <subnet_id_develop_b>
+```
+ 4.3 Импортируем виртуальные машины:
+```bash
+terraform import 'module.test-vm.yandex_compute_instance.vm[0]' <vm_id_webs_0>
+terraform import 'module.test-vm.yandex_compute_instance.vm[1]' <vm_id_webs_1>
+terraform import 'module.example-vm.yandex_compute_instance.vm[0]' <vm_id_web_stage>
+```
+5. Проверка plan
+   
 ### Задание 4
 <p align="center">
   <img src="screenshots/S4.png" alt="модуль vpc для создания подсетей в трех зонах доступности, результат из консоли YC" width="800"/>
