@@ -3,7 +3,7 @@
 
 ### Задание 1
 <p align="center">
-  <img src="screenshots/S1-1.png" alt="скриншот консоли ВМ yandex cloud с их метками" width="900"/>
+  <img src="screenshots/S1-1.png" alt="скриншот консоли ВМ yandex cloud с метками" width="900"/>
   <br>
   <em>скриншот консоли ВМ yandex cloud с их метками</em>
 </p>
@@ -60,21 +60,21 @@
 
 ### Задание 4
 <p align="center">
-  <img src="screenshots/S4.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S4.png" alt="модуль vpc для создания подсетей во всех зонах доступности, результат из консоли YC" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>модуль vpc для создания подсетей во всех зонах доступности, результат из консоли YC</em>
 </p> 
 
 ### Задание 7
 <p align="center">
-  <img src="screenshots/S7.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S7.png" alt=" секрет с помощью terraform vault, вывод в output" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>секрет с помощью terraform vault, вывод в output</em>
 </p> 
 
 <p align="center">
-  <img src="screenshots/S7-5.png" alt="output в виде списка словарей" width="800"/>
+  <img src="screenshots/S7-5.png" alt="новый секрет в vault с помощью terraform" width="800"/>
   <br>
-  <em>output в виде списка словарей</em>
+  <em>новый секрет в vault с помощью terraform</em>
 </p> 
 
