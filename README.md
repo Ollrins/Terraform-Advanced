@@ -5,7 +5,7 @@
 <p align="center">
   <img src="screenshots/S1-1.png" alt="скриншот консоли ВМ yandex cloud с метками" width="900"/>
   <br>
-  <em>скриншот консоли ВМ yandex cloud с их метками</em>
+  <em>скриншот консоли ВМ yandex cloud с метками</em>
 </p>
 <p align="center">
   <img src="screenshots/S1-2.png" alt="скриншот подключения к консоли и вывод команды sudo nginx -t" width="900"/>
