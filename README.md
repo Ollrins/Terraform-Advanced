@@ -18,22 +18,22 @@
   <em>terraform console вывод модуля</em>
 </p>
 <p align="center">
-  <img src="screenshots/S1-3-2.png" alt="скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud" width="900"/>
+  <img src="screenshots/S1-3-2.png" alt="terraform console вывод модуля - продолжение" width="900"/>
   <br>
-  <em>скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud</em>
+  <em>terraform console вывод модуля - продолжение</em>
 </p>
 
 ### Задание 2
 <p align="center">
-  <img src="screenshots/S2-2.png" alt="скриншот файла inventory.ini" width="800"/>
+  <img src="screenshots/S2-2.png" alt="terraform console вывод модуля" width="800"/>
   <br>
-  <em>скриншот файла inventory.ini</em>
+  <em>terraform console вывод модуля</em>
 </p> 
 
 <p align="center">
-  <img src="screenshots/S2-5.png" alt="скриншот файла inventory.ini" width="800"/>
+  <img src="screenshots/S2-5.png" alt="документация к модулю с помощью terraform-docs" width="800"/>
   <br>
-  <em>скриншот файла inventory.ini</em>
+  <em>документация к модулю с помощью terraform-docs</em>
 </p>
 
 ### Задание 3
