@@ -213,7 +213,7 @@ Terraform ожидает, что плагины будут находиться 
 text
 ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64/
 ```
-# Создали директорию для плагина
+#### Создали директорию для плагина
 ```bash
 mkdir -p ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64
 ```
