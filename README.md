@@ -198,3 +198,39 @@ EOF
 ```bash
 terraform init -plugin-dir=/home/Ollrins/.terraform.d/plugins
 ```
+
+
+
+Инструкция по локальной установке провайдера hashicorp/template
+1. Скачали провайдер с зеркала Yandex Cloud
+bash
+# Скачали архив с провайдером версии 2.1.2
+wget -O /tmp/terraform-provider-template.zip \
+  https://hashicorp-releases.yandexcloud.net/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_linux_amd64.zip
+2. Создали структуру каталогов для плагинов
+Terraform ожидает, что плагины будут находиться в определенной структуре:
+
+text
+~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64/
+bash
+# Создали директорию для плагина
+mkdir -p ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64
+3. Распаковали архив в нужную директорию
+bash
+# Распаковали скачанный архив
+unzip -o /tmp/terraform-provider-template.zip \
+  -d ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64/
+После распаковки в папке появился бинарный файл terraform-provider-template_v2.1.2.
+
+Для постоянного использования можно добавить в .terraformrc:
+
+hcl
+provider_installation {
+  filesystem_mirror {
+    path = "./plugins"
+  }
+  direct {
+    exclude = ["*/*/*"]
+  }
+}
+Тогда можно будет просто запускать terraform init без дополнительных флагов.
