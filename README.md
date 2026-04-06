@@ -204,7 +204,7 @@ terraform init -plugin-dir=/home/Ollrins/.terraform.d/plugins
 Инструкция по локальной установке провайдера hashicorp/template
 1. Скачали провайдер с зеркала Yandex Cloud
 bash
-# Скачали архив с провайдером версии 2.1.2
+#### Скачали архив с провайдером версии 2.1.2
 wget -O /tmp/terraform-provider-template.zip \
   https://hashicorp-releases.yandexcloud.net/terraform-provider-template/2.1.2/terraform-provider-template_2.1.2_linux_amd64.zip
 2. Создали структуру каталогов для плагинов
@@ -213,11 +213,11 @@ Terraform ожидает, что плагины будут находиться 
 text
 ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64/
 bash
-# Создали директорию для плагина
+#### Создали директорию для плагина
 mkdir -p ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64
 3. Распаковали архив в нужную директорию
 bash
-# Распаковали скачанный архив
+#### Распаковали скачанный архив
 unzip -o /tmp/terraform-provider-template.zip \
   -d ~/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.1.2/linux_amd64/
 После распаковки в папке появился бинарный файл terraform-provider-template_v2.1.2.
