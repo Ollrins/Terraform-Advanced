@@ -131,3 +131,70 @@ terraform import 'module.example-vm.yandex_compute_instance.vm[0]' <vm_id_web_st
 </p> 
 
 Код для задания 7 https://github.com/Ollrins/Terraform-Advanced/tree/main/src7
+
+
+
+Локальная установка Terraform провайдера Vault
+
+Решение: Установка провайдера из исходного кода
+1. Скачать исходный код провайдера
+```bash
+wget https://github.com/hashicorp/terraform-provider-vault/archive/refs/tags/v5.8.0.tar.gz
+tar -xzf v5.8.0.tar.gz
+cd terraform-provider-vault-5.8.0
+```
+2. Установить Go (если требуется более новая версия)
+```bash
+# Проверка текущей версии
+go version
+
+# Если версия ниже 1.26, установить новую
+wget https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
+echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.```bashrc
+source ~/.
+```
+3. Собрать провайдер из исходного кода
+```bash
+go build -o terraform-provider-vault
+```
+4. Создать правильную структуру директорий
+```bash
+# Создать директории для плагина
+mkdir -p ~/.terraform.d/plugins/registry.terraform.io/hashicorp/vault/5.8.0/linux_amd64
+
+# Скопировать бинарник с правильным именем (без версии в конце)
+cp terraform-provider-vault ~/.terraform.d/plugins/registry.terraform.io/hashicorp/vault/5.8.0/linux_amd64/terraform-provider-vault
+
+# Сделать исполняемым
+chmod +x ~/.terraform.d/plugins/registry.terraform.io/hashicorp/vault/5.8.0/linux_amd64/terraform-provider-vault
+5. Создать конфигурационный файл Terraform
+```bash
+cat > main.tf << 'EOF'
+terraform {
+  required_providers {
+    vault = {
+      source = "hashicorp/vault"
+      version = "5.8.0"
+    }
+  }
+}
+
+provider "vault" {
+  address = "http://127.0.0.1:8200"
+  token   = "education"
+}
+
+data "vault_generic_secret" "vault_example" {
+  path = "secret/example"
+}
+
+output "vault_example" {
+  value = nonsensitive(data.vault_generic_secret.vault_example.data)
+}
+EOF
+```
+6. Инициализировать Terraform
+```bash
+terraform init -plugin-dir=/home/Ollrins/.terraform.d/plugins
+```
